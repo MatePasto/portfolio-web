@@ -1,0 +1,271 @@
+/* Color Palette */
+* {
+    --background-color: #3A3845;
+    --primary-color: #F7CCAC;
+    --secondary-color: #C69B7B;
+    --font-color: #826F66;
+    --secondary-font-color: #000000;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "RobotoMono-Bold";
+  src: url("./assets/static/RobotoMono-Bold.ttf");
+}
+
+/* Header */
+.nav-wrapper {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--primary-color);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.left-side {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+    color: var(--font-color);
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    font-family: RobotoMono-Bold;
+    color: var(--font-color);
+}
+
+.menu:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--secondary-color);
+    color: var(--secondary-font-color);
+    cursor: pointer;
+}
+
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  width: 99vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.foto {
+    height: 30em;
+    width: 25em;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+
+.title {
+  font-family: RobotoMono-Bold;
+  font-size: 65px;
+  padding: 1em;
+  color: var(--primary-color);
+  user-select: none;
+}
+
+.title-small {
+  font-family: RobotoMono-Bold;
+  font-size: 35px;
+  padding-bottom: 1em;
+  color: var(--primary-color);
+}
+
+.description {
+  font-family: RobotoMono-Bold;
+  font-size: 20px;
+  color: var(--primary-color);
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.material-symbols-outlined {
+  font-size: 45px;
+  padding: 1em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  padding: 0 5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 2rem;
+  color: var(--primary-color);
+  user-select: none;
+}
+
+.img-project {
+    display: flex;
+    height: 12rem;
+    width: 8rem;
+}
+
+.background-img {
+    height: 50rem;
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    height: 8rem;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    user-select: none;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: RobotoMono-Bold;
+    font-size: 15px;
+}
+
+.wrapper-inverted {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.content-inverted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    padding: 0 5rem;
+    border: 2px solid var(--background-color);
+    border-radius: 2rem;
+    color: var(--background-color);
+    user-select: none;
+}
+
+.title-inverted {
+    font-family: RobotoMono-Bold;
+    font-size: 65px;
+    padding: 1em;
+    color: var(--background-color);
+    user-select: none;
+}
+  
+.title-small-inverted {
+    font-family: RobotoMono-Bold;
+    font-size: 35px;
+    padding-bottom: 1em;
+    color: var(--background-color);
+}
+  
+.description-inverted {
+    font-family: RobotoMono-Bold;
+    font-size: 20px;
+    color: var(--background-color);
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+/* Sheared */
+
+a {
+  color: var(--secondary-font-color);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
